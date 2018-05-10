@@ -12,6 +12,7 @@ import org.jetbrains.anko.design.appBarLayout
 import org.jetbrains.anko.design.coordinatorLayout
 import org.jetbrains.anko.matchParent
 import org.jetbrains.anko.recyclerview.v7.recyclerView
+import org.jetbrains.anko.textView
 
 class CFExampleLayout : ActivityToolBarAnkoComponent<CFExampleActivity> {
 
@@ -24,14 +25,18 @@ class CFExampleLayout : ActivityToolBarAnkoComponent<CFExampleActivity> {
             appBarLayout {
                 toolbar = themedToolbar(R.style.ThemeOverlay_AppCompat_Dark_ActionBar) {
                     backgroundColor = R.color.colorPrimary
+                    textView("CFExample")
                 }.lparams(width = matchParent) {
-                    scrollFlags = AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL or AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS
+                    scrollFlags = AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL or
+                            AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS
                 }
             }.lparams(width = matchParent)
 
             recyclerView = recyclerView {
 
-            }.lparams(width = matchParent, height = matchParent)
+            }.lparams(width = matchParent, height = matchParent) {
+                behavior = AppBarLayout.ScrollingViewBehavior()
+            }
         }
     }
 }
