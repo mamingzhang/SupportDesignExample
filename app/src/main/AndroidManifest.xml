@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".ui.screens.clayout.CFExampleActivity"></activity>
         <activity android:name=".ui.screens.cfviewpager.CFViewPagerActivity"></activity>
+        <activity android:name=".ui.screens.cfviewpager.CFViewPagerParallexActivity"></activity>
     </application>
 
 </manifest>
