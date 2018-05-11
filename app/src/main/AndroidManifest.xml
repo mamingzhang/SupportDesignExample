@@ -21,7 +21,7 @@
         <activity android:name=".ui.screens.cfviewpager.CFViewPagerActivity"></activity>
         <activity android:name=".ui.screens.cfviewpager.CFViewPagerParallexActivity"></activity>
         <activity android:name=".ui.screens.behavior.BottomSheetBehaviorActivity"></activity>
-
+        <activity android:name=".ui.screens.behavior.SwipeDismissBehaviorActivity"></activity>
     </application>
 
 </manifest>

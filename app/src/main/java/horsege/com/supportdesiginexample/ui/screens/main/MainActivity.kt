@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import butterknife.ButterKnife
 import horsege.com.supportdesiginexample.ui.avtivity.BaseActivity
 import horsege.com.supportdesiginexample.ui.screens.behavior.BottomSheetBehaviorActivity
+import horsege.com.supportdesiginexample.ui.screens.behavior.SwipeDismissBehaviorActivity
 import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerActivity
 import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerParallexActivity
 import horsege.com.supportdesiginexample.ui.screens.clayout.CFExampleActivity
@@ -22,7 +23,8 @@ class MainActivity : BaseActivity<MainLayout>() {
     private val DATA = mapOf("ToolBar效果" to CFExampleActivity::class.java,
             "ViewPager效果" to CFViewPagerActivity::class.java,
             "ViewPager视差特效" to CFViewPagerParallexActivity::class.java,
-            "BottomSheetBehavior效果测试" to BottomSheetBehaviorActivity::class.java)
+            "BottomSheetBehavior效果测试" to BottomSheetBehaviorActivity::class.java,
+            "SwipeDismissBehavior效果测试" to SwipeDismissBehaviorActivity::class.java)
 
     override val ui = MainLayout()
 
