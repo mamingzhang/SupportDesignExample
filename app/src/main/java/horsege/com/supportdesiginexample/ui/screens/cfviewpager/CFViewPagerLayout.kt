@@ -1,5 +1,6 @@
 package horsege.com.supportdesiginexample.ui.screens.cfviewpager
 
+import android.graphics.Color
 import android.support.design.widget.AppBarLayout
 import android.support.design.widget.TabLayout
 import android.support.v4.view.ViewPager
@@ -31,10 +32,10 @@ class CFViewPagerLayout : ActivityAnkoComponent<CFViewPagerActivity> {
                 }
 
                 tabLayout = tabLayout {
-                    backgroundColor = R.color.colorPrimary
-                }.lparams(width = matchParent, height = wrapContent) {
-                    gravity = Gravity.BOTTOM
-                }
+                    setSelectedTabIndicatorHeight(dip(4))
+                    setSelectedTabIndicatorColor(resources.getColor(R.color.colorAccent))
+                    setTabTextColors(Color.parseColor("#000000"), Color.parseColor("#FFFFFF"))
+                }.lparams(width = matchParent, height = wrapContent)
             }.lparams(width = matchParent, height = dip(250))
 
             viewPager = viewPager {
