@@ -46,17 +46,15 @@ class CFViewPagerParallexLayout : ActivityToolBarAnkoComponent<CFViewPagerParall
 
                     toolbar = themedToolbar(R.style.ThemeOverlay_AppCompat_Light) {
                         title = "ViewPager视差特效"
-                        backgroundColor = R.color.colorPrimary
                     }.lparams(width = matchParent, height = dip(50)) {
                         collapseMode = COLLAPSE_MODE_PIN
                     }
                 }.lparams(width = matchParent, height = dip(250)) {
                     scrollFlags = AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL or
-                            AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS
+                            AppBarLayout.LayoutParams.SCROLL_FLAG_EXIT_UNTIL_COLLAPSED
                 }
 
                 tabLayout = tabLayout {
-                    backgroundColor = R.color.colorPrimary
                     setSelectedTabIndicatorHeight(dip(4))
                     setSelectedTabIndicatorColor(resources.getColor(R.color.colorAccent))
                     setTabTextColors(Color.parseColor("#000000"), Color.parseColor("#FFFFFF"))
