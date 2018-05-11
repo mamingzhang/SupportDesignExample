@@ -3,6 +3,7 @@ package horsege.com.supportdesiginexample.ui.screens.cfviewpager
 import android.support.design.widget.AppBarLayout
 import android.support.design.widget.TabLayout
 import android.support.v4.view.ViewPager
+import android.view.Gravity
 import android.view.View
 import android.widget.ImageView
 import horsege.com.supportdesiginexample.R
@@ -31,8 +32,10 @@ class CFViewPagerLayout : ActivityAnkoComponent<CFViewPagerActivity> {
 
                 tabLayout = tabLayout {
                     backgroundColor = R.color.colorPrimary
+                }.lparams(width = matchParent, height = wrapContent) {
+                    gravity = Gravity.BOTTOM
                 }
-            }.lparams(width = matchParent)
+            }.lparams(width = matchParent, height = dip(250))
 
             viewPager = viewPager {
                 id = View.generateViewId()
