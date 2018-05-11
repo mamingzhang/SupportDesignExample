@@ -18,7 +18,8 @@ import org.jetbrains.anko.design.themedAppBarLayout
 class BottomSheetBehaviorLayout : ActivityToolBarAnkoComponent<BottomSheetBehaviorActivity> {
     lateinit override var toolbar: Toolbar
 
-    lateinit var displayBtn: Button
+    lateinit var bottomSheetBehaviorBtn: Button
+    lateinit var bottomSheetDialogBtn: Button
     lateinit var behaviorLayout: View
 
     override fun createView(ui: AnkoContext<BottomSheetBehaviorActivity>) = with(ui) {
@@ -32,12 +33,15 @@ class BottomSheetBehaviorLayout : ActivityToolBarAnkoComponent<BottomSheetBehavi
             linearLayout {
                 orientation = VERTICAL
 
-                displayBtn = button("BottomSheet 显示隐藏") {
+                bottomSheetBehaviorBtn = button("BottomSheet 显示隐藏") {
+
+                }.lparams(width = matchParent, height = wrapContent)
+
+                bottomSheetDialogBtn = button("BottomSheetDialog 显示隐藏") {
 
                 }.lparams(width = matchParent, height = wrapContent)
 
             }.lparams(width = matchParent, height = wrapContent) {
-                gravity = Gravity.CENTER
                 behavior = AppBarLayout.ScrollingViewBehavior()
             }
 
