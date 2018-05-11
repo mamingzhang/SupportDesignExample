@@ -7,15 +7,22 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import butterknife.ButterKnife
 import horsege.com.supportdesiginexample.ui.avtivity.BaseActivity
+import horsege.com.supportdesiginexample.ui.screens.behavior.BottomSheetBehaviorActivity
 import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerActivity
 import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerParallexActivity
 import horsege.com.supportdesiginexample.ui.screens.clayout.CFExampleActivity
 
+/**
+ * 参考资料：
+ * 1. https://blog.csdn.net/gdutxiaoxu/article/details/52858598
+ * 2. https://blog.csdn.net/yanzhenjie1003/article/details/52205665
+ */
 class MainActivity : BaseActivity<MainLayout>() {
 
     private val DATA = mapOf("ToolBar效果" to CFExampleActivity::class.java,
             "ViewPager效果" to CFViewPagerActivity::class.java,
-            "ViewPager视差特效" to CFViewPagerParallexActivity::class.java)
+            "ViewPager视差特效" to CFViewPagerParallexActivity::class.java,
+            "BottomSheetBehavior效果测试" to BottomSheetBehaviorActivity::class.java)
 
     override val ui = MainLayout()
 
