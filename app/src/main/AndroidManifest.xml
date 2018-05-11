@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.screens.clayout.CFExampleActivity"></activity>
+        <activity android:name=".ui.screens.cfviewpager.CFViewPagerActivity"></activity>
     </application>
 
 </manifest>

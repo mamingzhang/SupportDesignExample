@@ -7,11 +7,13 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import butterknife.ButterKnife
 import horsege.com.supportdesiginexample.ui.avtivity.BaseActivity
+import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerActivity
 import horsege.com.supportdesiginexample.ui.screens.clayout.CFExampleActivity
 
 class MainActivity : BaseActivity<MainLayout>() {
 
-    private val DATA = mapOf("CFExampleActivity" to CFExampleActivity::class.java)
+    private val DATA = mapOf("CFExampleActivity" to CFExampleActivity::class.java,
+            "CFViewPagerActivity" to CFViewPagerActivity::class.java)
 
     override val ui = MainLayout()
 

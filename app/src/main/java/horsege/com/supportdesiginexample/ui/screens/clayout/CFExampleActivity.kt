@@ -2,7 +2,7 @@ package horsege.com.supportdesiginexample.ui.screens.clayout
 
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import horsege.com.supportdesiginexample.ui.adapter.CFExampleAdapter
+import horsege.com.supportdesiginexample.ui.adapter.BaseSingleTextAdapter
 import horsege.com.supportdesiginexample.ui.avtivity.BaseActivity
 import org.jetbrains.anko.toast
 
@@ -10,7 +10,7 @@ class CFExampleActivity : BaseActivity<CFExampleLayout>() {
 
     override val ui = CFExampleLayout()
 
-    private val adapter = CFExampleAdapter { toast(it) }
+    private val adapter = BaseSingleTextAdapter { toast(it) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
