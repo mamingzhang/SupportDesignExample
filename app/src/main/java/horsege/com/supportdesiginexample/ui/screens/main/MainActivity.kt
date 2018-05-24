@@ -11,6 +11,7 @@ import horsege.com.supportdesiginexample.ui.screens.behavior.SwipeDismissBehavio
 import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerActivity
 import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerParallexActivity
 import horsege.com.supportdesiginexample.ui.screens.actionbutton.CFSnackBarActivity
+import horsege.com.supportdesiginexample.ui.screens.behavior.CFCustomBehavior1Activity
 
 /**
  * 参考资料：
@@ -23,7 +24,8 @@ class MainActivity : BaseActivity<MainLayout>() {
             "ViewPager效果" to CFViewPagerActivity::class.java,
             "ViewPager视差特效" to CFViewPagerParallexActivity::class.java,
             "BottomSheetBehavior效果测试" to BottomSheetBehaviorActivity::class.java,
-            "SwipeDismissBehavior效果测试" to SwipeDismissBehaviorActivity::class.java)
+            "SwipeDismissBehavior效果测试" to SwipeDismissBehaviorActivity::class.java,
+            "自定义Behavior效果测试一" to CFCustomBehavior1Activity::class.java)
 
     override val ui = MainLayout()
 
