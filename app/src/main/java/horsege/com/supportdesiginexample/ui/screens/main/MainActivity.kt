@@ -2,7 +2,6 @@ package horsege.com.supportdesiginexample.ui.screens.main
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import butterknife.ButterKnife
@@ -11,7 +10,7 @@ import horsege.com.supportdesiginexample.ui.screens.behavior.BottomSheetBehavior
 import horsege.com.supportdesiginexample.ui.screens.behavior.SwipeDismissBehaviorActivity
 import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerActivity
 import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerParallexActivity
-import horsege.com.supportdesiginexample.ui.screens.clayout.CFExampleActivity
+import horsege.com.supportdesiginexample.ui.screens.clayout.CFSnackBarActivity
 
 /**
  * 参考资料：
@@ -20,7 +19,7 @@ import horsege.com.supportdesiginexample.ui.screens.clayout.CFExampleActivity
  */
 class MainActivity : BaseActivity<MainLayout>() {
 
-    private val DATA = mapOf("ToolBar效果" to CFExampleActivity::class.java,
+    private val DATA = mapOf("ToolBar效果" to CFSnackBarActivity::class.java,
             "ViewPager效果" to CFViewPagerActivity::class.java,
             "ViewPager视差特效" to CFViewPagerParallexActivity::class.java,
             "BottomSheetBehavior效果测试" to BottomSheetBehaviorActivity::class.java,

@@ -1,26 +1,31 @@
 package horsege.com.supportdesiginexample.ui.screens.clayout
 
 import android.support.design.widget.AppBarLayout
+import android.support.design.widget.CoordinatorLayout
+import android.support.design.widget.FloatingActionButton
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
+import android.view.Gravity
 import horsege.com.supportdesiginexample.R
 import horsege.com.supportdesiginexample.ui.avtivity.ActivityToolBarAnkoComponent
-import org.jetbrains.anko.AnkoContext
+import org.jetbrains.anko.*
 import org.jetbrains.anko.appcompat.v7.themedToolbar
-import org.jetbrains.anko.backgroundColor
 import org.jetbrains.anko.design.appBarLayout
 import org.jetbrains.anko.design.coordinatorLayout
-import org.jetbrains.anko.matchParent
+import org.jetbrains.anko.design.floatingActionButton
 import org.jetbrains.anko.recyclerview.v7.recyclerView
-import org.jetbrains.anko.textView
 
-class CFExampleLayout : ActivityToolBarAnkoComponent<CFExampleActivity> {
+class CFSnackBarLayout : ActivityToolBarAnkoComponent<CFSnackBarActivity> {
 
     lateinit override var toolbar: Toolbar
 
+    lateinit var coordinatorLayout: CoordinatorLayout
+
     lateinit var recyclerView: RecyclerView
 
-    override fun createView(ui: AnkoContext<CFExampleActivity>) = with(ui) {
+    lateinit var floatingActionButton: FloatingActionButton
+
+    override fun createView(ui: AnkoContext<CFSnackBarActivity>) = with(ui) {
         coordinatorLayout {
             appBarLayout {
                 toolbar = themedToolbar(R.style.ThemeOverlay_AppCompat_Dark_ActionBar) {
@@ -36,6 +41,17 @@ class CFExampleLayout : ActivityToolBarAnkoComponent<CFExampleActivity> {
 
             }.lparams(width = matchParent, height = matchParent) {
                 behavior = AppBarLayout.ScrollingViewBehavior()
+            }
+
+            floatingActionButton = floatingActionButton {
+                imageResource = R.mipmap.add
+            }.lparams(width = wrapContent, height = wrapContent) {
+                bottomMargin = dip(40)
+                rightMargin = dip(20)
+
+                gravity = Gravity.BOTTOM or Gravity.RIGHT or Gravity.END
+
+                behavior = FloatingActionButton.Behavior()
             }
         }
     }
