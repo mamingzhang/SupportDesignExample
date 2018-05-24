@@ -1,4 +1,4 @@
-package horsege.com.supportdesiginexample.ui.screens.clayout
+package horsege.com.supportdesiginexample.ui.screens.actionbutton
 
 import android.support.design.widget.AppBarLayout
 import android.support.design.widget.CoordinatorLayout
@@ -51,7 +51,7 @@ class CFSnackBarLayout : ActivityToolBarAnkoComponent<CFSnackBarActivity> {
 
                 gravity = Gravity.BOTTOM or Gravity.RIGHT or Gravity.END
 
-                behavior = FloatingActionButton.Behavior()
+                behavior = CustomScaleBehavior()
             }
         }
     }

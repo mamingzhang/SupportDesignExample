@@ -1,4 +1,4 @@
-package horsege.com.supportdesiginexample.ui.screens.clayout
+package horsege.com.supportdesiginexample.ui.screens.actionbutton
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
