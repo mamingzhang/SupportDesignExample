@@ -2,7 +2,6 @@ package horsege.com.supportdesiginexample.ui.screens.behavior
 
 import android.support.design.widget.AppBarLayout
 import android.support.design.widget.CoordinatorLayout
-import android.util.Log
 import android.view.View
 
 class CustomBehavior1 : CoordinatorLayout.Behavior<View>() {

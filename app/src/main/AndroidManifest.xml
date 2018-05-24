@@ -23,6 +23,7 @@
         <activity android:name=".ui.screens.behavior.BottomSheetBehaviorActivity"></activity>
         <activity android:name=".ui.screens.behavior.SwipeDismissBehaviorActivity"></activity>
         <activity android:name=".ui.screens.behavior.CFCustomBehavior1Activity"></activity>
+        <activity android:name=".ui.screens.cardview.CardViewActivity"></activity>
 
     </application>
 

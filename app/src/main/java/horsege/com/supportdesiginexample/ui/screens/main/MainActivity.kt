@@ -12,6 +12,7 @@ import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerActiv
 import horsege.com.supportdesiginexample.ui.screens.cfviewpager.CFViewPagerParallexActivity
 import horsege.com.supportdesiginexample.ui.screens.actionbutton.CFSnackBarActivity
 import horsege.com.supportdesiginexample.ui.screens.behavior.CFCustomBehavior1Activity
+import horsege.com.supportdesiginexample.ui.screens.cardview.CardViewActivity
 
 /**
  * 参考资料：
@@ -25,7 +26,8 @@ class MainActivity : BaseActivity<MainLayout>() {
             "ViewPager视差特效" to CFViewPagerParallexActivity::class.java,
             "BottomSheetBehavior效果测试" to BottomSheetBehaviorActivity::class.java,
             "SwipeDismissBehavior效果测试" to SwipeDismissBehaviorActivity::class.java,
-            "自定义Behavior效果测试一" to CFCustomBehavior1Activity::class.java)
+            "自定义Behavior效果测试一" to CFCustomBehavior1Activity::class.java,
+            "CardView效果测试" to CardViewActivity::class.java)
 
     override val ui = MainLayout()
 
